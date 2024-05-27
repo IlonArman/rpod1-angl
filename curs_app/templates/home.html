@@ -1,0 +1,27 @@
+{% extends './base.html' %}
+{% block title %}Home page{% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="content1">
+    <h1>Курсы агнлийского языка</h1>
+    <h2 class="h1">A0-C2</h2>    
+    <img src="{% static 'images/mg1.jpeg' %}" alt="Image 1">
+    <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis neque tempora animi, tempore earum officiis aut ducimus veniam sapiente consequuntur magni? Et eos numquam placeat voluptas, soluta rerum beatae.</p>
+    <a href="{% url 'aboutus_page' %}">О нас</a>            
+</div>
+<div class="content2">
+    <h2 class="h2">От нас</h2>
+    <ul class="conul">
+        <li>Британский/Американский английский</li>                
+        <li>Хорошие учителя</li>
+        <li>Удобный график обучения</li>
+        <li>Возможность обучатся онлайн и офлайн</li>
+        <li>Дружная группа из 4-6 человек</li>
+        <li>Индевидуальный подход к обучению</li>
+    </ul>
+    
+    <img src="{% static 'images/brandus.jpeg' %}" alt="Brand Us">
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo soluta quae ut? Atque magnam, odio inventore ipsa unde neque modi necessitatibus adipisci eveniet similique. Expedita, autem? Modi harum repudiandae magnam!</p>
+</div>
+{% endblock %}

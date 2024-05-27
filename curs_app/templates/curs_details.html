@@ -1,0 +1,12 @@
+{% extends './base.html' %}
+{% block title %}Details{% endblock %}
+
+{% block content %}
+<div class="curs-details">
+    <h1>{{ curs.language_lvl }}</h1>
+    <h2>{{ curs.learn_time }}</h2>
+    <p>{{ curs.description }}</p>
+    <b>{{ curs.learn_price }}</b>
+    <a href="{% url 'cursy_page' %}">Back</a>
+</div>
+{% endblock %}
